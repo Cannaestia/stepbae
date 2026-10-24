@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Cormorant Garamond", "Times New Roman", serif;
+  --font-serif: "Crimson Pro", Georgia, serif;
+
+  --color-ink: #141210;
+  --color-ink-2: #1c1916;
+  --color-ink-3: #23201c;
+  --color-gold: #d4a868;
+  --color-gold-light: #e0b97c;
+  --color-gold-dark: #b98a4c;
+  --color-cream: #f4ede3;
+  --color-cream-2: #ebe2d4;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  @apply bg-ink font-serif text-white antialiased;
+}

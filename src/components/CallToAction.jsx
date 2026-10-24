@@ -1,0 +1,30 @@
+import Button from './Button.jsx'
+
+export default function CallToAction() {
+  return (
+    <section
+      id="partnership"
+      className="relative overflow-hidden border-t border-gold/30 text-center"
+      style={{
+        background:
+          'radial-gradient(ellipse 45% 120% at 90% 40%, rgba(150,110,60,0.55), transparent 70%),' +
+          'radial-gradient(ellipse 40% 90% at 8% 100%, rgba(120,90,50,0.35), transparent 70%),' +
+          'linear-gradient(100deg, #1a1714 0%, #2a231b 45%, #4a3a26 80%, #6a5133 100%)',
+      }}
+    >
+      {/* soft diagonal light sweep */}
+      <div className="pointer-events-none absolute -right-20 top-0 h-full w-1/2 -skew-x-12 bg-gradient-to-r from-transparent via-gold/10 to-transparent" />
+
+      <div className="relative mx-auto max-w-[1024px] px-6 pb-[14px] pt-[14px]">
+        <h2 className="font-display text-[31px] italic leading-tight text-white">
+          Let’s Create Exceptional Restorations Together
+        </h2>
+        <p className="mt-0.5 text-[13.5px] text-white/90">
+          Experience the STEPBAE difference — personalized service,
+          uncompromising esthetics, and a partner who cares.
+        </p>
+        <Button className="mt-[14px] h-[34px] px-[22px]">Partner With Us</Button>
+      </div>
+    </section>
+  )
+}
